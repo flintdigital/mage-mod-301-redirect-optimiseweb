@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* @package    Optimiseweb_Redirects
+* @author     Kathir Vel (sid@optimiseweb.co.uk)
+* @copyright  Copyright (c) 2015 Kathir Vel
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    
+    <menu>
+        <optimiseweball translate="title" module="ow_redirects">
+            <title>Optimise Web</title>
+            <sort_order>71</sort_order>
+            <children>
+                <ow_redirects translate="title" module="ow_redirects">
+                    <title>Mass 301 Redirects</title>
+                    <sort_order>5</sort_order>
+                    <action>adminhtml/system_config/edit/section/optimisewebredirects</action>
+                    <depends>
+                        <config>optimisewebredirects/menu/ow_redirects_enabled</config>
+                    </depends>
+                </ow_redirects>
+            </children>
+            <depends>
+                <config>optimisewebredirects/menu/optimiseweball_enabled</config>
+            </depends>
+        </optimiseweball>
+    </menu>
+
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <optimiseweball translate="title" module="ow_redirects">
+                        <title>Optimise Web - Menu Group</title>
+                        <sort_order>10</sort_order>
+                        <children>
+                            <ow_redirects translate="title" module="ow_redirects">
+                                <title>Optimise Web - Mass 301 Redirects</title>
+                                <sort_order>10</sort_order>
+                            </ow_redirects>
+                        </children>
+                    </optimiseweball>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <optimisewebconfig translate="title" module="ow_redirects">
+                                        <title>Optimise Web - System Configuration Group</title>
+                                    </optimisewebconfig>
+                                    <optimisewebredirects translate="title" module="ow_redirects">
+                                        <title>Optimise Web - Mass 301 Redirects</title>
+                                    </optimisewebredirects>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    
+</config>

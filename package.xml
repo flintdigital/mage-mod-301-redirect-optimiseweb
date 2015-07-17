@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Optimiseweb_Redirects</name>
+    <version>0.3.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Set up bulk 301 redirects for 404 pages by uploading the URL data in a CSV file. No HTACCESS or DB changes!</summary>
+    <description>Set up bulk 301 redirects for 404 pages by uploading the URL data in a CSV file. No HTACCESS or DB changes!</description>
+    <notes>* Minor update to disabled products and categories URLs * Removed reporting of admin url and email * The module reports the module and Magento version for me to know about compatibility</notes>
+    <authors><author><name>Kathir Vel</name><user>OptimiseWeb</user><email>info@optimiseweb.co.uk</email></author></authors>
+    <date>2015-06-19</date>
+    <time>08:49:57</time>
+    <contents><target name="magecommunity"><dir name="Optimiseweb"><dir name="Redirects"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Fieldset"><file name="Hint.php" hash="53015cb55a9e674995a99ce621b27de8"/></dir></dir></dir></dir><dir name="System"><dir name="Config"><dir name="Backend"><file name="Download.php" hash="271ee03fca9ecce398eeb174bc3f1c32"/><file name="Download1.php" hash="da149ec109a496ebabc0444d5bf53232"/><file name="Downloadquerystringfile.php" hash="e458890aa9fba432f97ed4f38985a7da"/></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="69ad76fea40d7c3a73e24210b83c52ad"/></dir><dir name="Model"><file name="Redirector.php" hash="ba29d3eeefb072387fe85da9eb4c0a1e"/></dir><dir name="doc"><file name="Readme.html" hash="14bbc48e3864e316759b8dfde12c2d58"/></dir><dir name="etc"><file name="adminhtml.xml" hash="513115a18f7dc90511466fdb3ffc5ddc"/><file name="config.xml" hash="c5d5d6b9dbdf5d99daba0342070e83be"/><file name="system.xml" hash="f2f912c491e5f9a3dd9601a5bb197587"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Optimiseweb_Redirects.xml" hash="fc570b2799c319db61907ac4794f99d5"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Optimiseweb_Redirects.csv" hash="d41d8cd98f00b204e9800998ecf8427e"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="optimiseweb"><dir name="redirects"><dir name="system"><dir name="config"><dir name="fieldset"><file name="hint.phtml" hash="79322c0ba284256e1696c40b6bf466ff"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
