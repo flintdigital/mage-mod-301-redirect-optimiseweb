@@ -13,7 +13,7 @@ Optimise Web's Bulk Redirects extension for Magento allows you to upload all you
 
 ## Installation
 Install using modgit: 
-`modgit add mage-301-redirect-optimiseweb https://github.com/flintdigital/mage-301-redirect-optimiseweb.git`
+`modgit add mage-mod-301-redirect-optimiseweb https://github.com/flintdigital/mage-301-redirect-optimiseweb.git`
 
 # Usage
 
